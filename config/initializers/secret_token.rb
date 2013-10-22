@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Employeedatabase::Application.config.secret_key_base = '51ae75f45a0b518f5741e1eecf916a31363afd497eba30f2dbe1aa7518e7260af7a4a521f08d86d9d58f27ca24662783b61db56a056d11d6d136771e979dec02'
+Employeedatabase::Application.config.secret_key_base = '7cd73f59b9a31a5f013807ded57d47f2c9bb81561727414f1573cf5e6efb96236110d41ac39e15be3fb4019e61ce11a93cb9c3a7ff475b968372e5bdbdfabbf0'
