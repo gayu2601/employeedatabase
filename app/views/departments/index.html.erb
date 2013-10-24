@@ -1,6 +1,6 @@
 <h1>Listing departments</h1>
-
-<table>
+<%= provide(:title,"Departments") %>
+<table border="1">
   <thead>
     <tr>
       <th>College</th>
@@ -12,7 +12,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody border="1">
     <% @departments.each do |department| %>
       <tr>
         <td><%= department.college %></td>

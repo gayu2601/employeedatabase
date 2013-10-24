@@ -1,7 +1,29 @@
 <%= link_to "Employeedatabase", root_path, :class => 'brand' %>
 <ul class="nav pull-right">
   <% if user_signed_in? %>
+      <li>
+      <%= link_to 'HOD',hods_path %>
+  </li>
+      <li>
+      <%= link_to 'Employee',employees_path %>
+  </li>
+      <li>
+      <%= link_to 'Departments',departments_path %>
+  </li>
+      <li>
+      <%= link_to 'Colleges',colleges_path %>
+  </li>
+      <li>
+      <%= link_to 'University',universities_path %>
+  </li>
+      <li>
+      <%= link_to 'Teaching',teachings_path %>
+  </li>
+      <li>
+      <%= link_to 'Non Teaching',nonteachings_path %>
+  </li>
     <li>
+
     <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
     </li>
   <% else %>
