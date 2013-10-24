@@ -1,0 +1,29 @@
+<h1>Listing nonteachings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Post</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nonteachings.each do |nonteaching| %>
+      <tr>
+        <td><%= nonteaching.employee %></td>
+        <td><%= nonteaching.post %></td>
+        <td><%= link_to 'Show', nonteaching %></td>
+        <td><%= link_to 'Edit', edit_nonteaching_path(nonteaching) %></td>
+        <td><%= link_to 'Destroy', nonteaching, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nonteaching', new_nonteaching_path %>

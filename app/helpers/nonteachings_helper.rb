@@ -1,0 +1,2 @@
+module NonteachingsHelper
+end

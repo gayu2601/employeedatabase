@@ -1,0 +1,2 @@
+module HodsHelper
+end
