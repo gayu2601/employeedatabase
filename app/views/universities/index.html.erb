@@ -14,7 +14,7 @@
   <tbody>
     <% @universities.each do |university| %>
       <tr>
-        <td><%= university.uname %></td>
+        <td><%= university.name %></td>
         <td><%= university.uloc %></td>
         <td><%= link_to 'Show', university %></td>
         <td><%= link_to 'Edit', edit_university_path(university) %></td>

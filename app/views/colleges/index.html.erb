@@ -16,8 +16,8 @@
     <% @colleges.each do |college| %>
       <tr>
         <td><%= college.c_code %></td>
-        <td><%= college.cname %></td>
-        <td><%= college.university %></td>
+        <td><%= college.name %></td>
+        <td><%= college.university.name %></td>
         <td><%= link_to 'Show', college %></td>
         <td><%= link_to 'Edit', edit_college_path(college) %></td>
         <td><%= link_to 'Destroy', college, method: :delete, data: { confirm: 'Are you sure?' } %></td>

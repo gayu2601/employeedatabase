@@ -1,6 +1,6 @@
 <h1>Listing hods</h1>
 
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>Employee</th>
@@ -14,8 +14,8 @@
   <tbody>
     <% @hods.each do |hod| %>
       <tr>
-        <td><%= hod.employee %></td>
-        <td><%= hod.department %></td>
+        <td><%= hod.employee.name %></td>
+        <td><%= hod.department.name %></td>
         <td><%= link_to 'Show', hod %></td>
         <td><%= link_to 'Edit', edit_hod_path(hod) %></td>
         <td><%= link_to 'Destroy', hod, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131024124401) do
+ActiveRecord::Schema.define(version: 20131027091129) do
 
   create_table "colleges", force: true do |t|
     t.string   "c_code"
-    t.string   "cname"
+    t.string   "name"
     t.integer  "university_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20131024124401) do
   create_table "departments", force: true do |t|
     t.integer  "college_id"
     t.string   "dno"
-    t.string   "dname"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -76,7 +76,7 @@ ActiveRecord::Schema.define(version: 20131024124401) do
   add_index "teachings", ["employee_id"], name: "index_teachings_on_employee_id", using: :btree
 
   create_table "universities", force: true do |t|
-    t.string   "uname"
+    t.string   "name"
     t.string   "uloc"
     t.datetime "created_at"
     t.datetime "updated_at"
