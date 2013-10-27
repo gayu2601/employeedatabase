@@ -1,5 +1,12 @@
 h1. Employeedatabase
 
+- git clone https://github.com/prashantbarca/employeedatabase
+- cd employeedatabase
+- mv config/example.yml config/database.yml
+- bundle install
+- vim database.yml (fill ur passwords)
+- rake db:migrate
+- rails s
 This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.io/.
 
 h2. Diagnostics
